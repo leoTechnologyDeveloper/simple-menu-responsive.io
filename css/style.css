@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,900&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+:root{
+    --coral: coral;
+    --coralMedium: rgb(228, 96, 48);
+    --white: white;
+    --grey:  grey;
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    background-color: var(--coral);
+    display: flex;
+}
+
+
+.hamburguer-icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    /* filter: invert(); */
+    /* display: block; */
+    z-index: 1;
+}
+
+.close-icon{
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    z-index: 1;
+    /* background-color: var(--coral); */
+}
+
+.ul-menu{
+    background-color: var(--coral);
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    transform: translateX(100%);
+    position: absolute;
+    transition: transform .3s;
+}
+
+.ul-menu .li-menu{
+    border-bottom: 1px solid var(--grey);
+    padding: 5px;
+    list-style: none;
+}
+
+.ul-menu .li-menu:hover{
+    background-color: var(--coralMedium);
+    cursor: pointer;
+}
+
+.ul-menu .li-menu .a-menu{
+    text-decoration: none;
+    color: var(--white)
+}
+
+.main{
+    
+    max-width: 90%;
+    margin: 60px auto;
+}
+
+.translationHide{
+   transform: translateX(0);
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+/* ******** MEDIA QUERIS *********************** */
+
+@media screen and (min-width: 768px) {
+    .ul-menu{
+        flex-direction: row;
+        transform: translateX(0);
+    }
+
+    .hamburguer-icon{
+        display: none;
+    }
+
+
+}
+
+
