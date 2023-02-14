@@ -7,8 +7,8 @@ font-family: 'Poppins', sans-serif;
 */
 
 :root{
-    --coral: coral;
-    --coralMedium: rgb(228, 96, 48);
+    --coral: rgb(235, 91, 38);
+    --coralMedium: rgb(202, 107, 72);
     --white: white;
     --grey:  grey;
 }
@@ -38,6 +38,7 @@ body{
     /* filter: invert(); */
     /* display: block; */
     z-index: 1;
+    cursor: pointer;
 }
 
 .close-icon{
@@ -48,6 +49,7 @@ body{
     font-size: 2rem;
     z-index: 1;
     /* background-color: var(--coral); */
+    cursor: pointer;
 }
 
 .ul-menu{
@@ -65,12 +67,15 @@ body{
 
 .ul-menu .li-menu{
     border-bottom: 1px solid var(--grey);
-    padding: 5px;
+    padding: 25px;
     list-style: none;
+    
 }
 
 .ul-menu .li-menu:hover{
-    background-color: var(--coralMedium);
+    /* background-color: var(--coralMedium); */
+    background-color: var(--grey);
+
     cursor: pointer;
 }
 
@@ -109,6 +114,11 @@ body{
         display: none;
     }
 
+    .ul-menu .li-menu{
+    padding: 4px 20px;
+    font-size: 1.5rem;
+    
+}
 
 }
 
